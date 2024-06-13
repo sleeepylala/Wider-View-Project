@@ -1,0 +1,62 @@
+.section-ui-developing {
+  margin-top: 130px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 600px;
+  border-radius: 25px;
+  z-index: 1000 !important;
+  position: relative;
+  background-color: rgb(92, 0, 255);
+
+  .container-section-text {
+    padding-left: 50px;
+    color: white;
+    .cta {
+      text-decoration: none;
+      padding: 10px 0;
+      margin-top: 40px;
+      border-bottom: 1px solid #ffffff;
+      font-family: "Rubik";
+      font-size: 20px;
+      line-height: 27px;
+      display: inline-block;
+      color: #ffffff;
+    }
+  }
+  .container-p {
+    width: 650px;
+  }
+  h2 {
+    font-family: $font-family-pp-neue-machina;
+    font-size: 48px;
+    line-height: 45px;
+    font-weight: 400;
+
+    padding-bottom: 30px;
+  }
+
+  p {
+    font-family: $font-family-rubik;
+    font-size: 20px;
+    line-height: 32px;
+  }
+}
+
+.container-button {
+  width: 550px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  button {
+    color: #1e2c2c !important;
+    background: #f2f2f2;
+    font-family: $font-family-pp-neue-machina;
+    border-radius: 10px;
+    margin: 0 10px 20px 10px;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 27px;
+  }
+}
