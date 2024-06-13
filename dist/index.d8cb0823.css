@@ -419,4 +419,39 @@
   font-size: 20px;
   line-height: 27px;
 }
+
+.section-form {
+  border: 5px solid green;
+  justify-content: center;
+  display: flex;
+}
+
+.btn-primary {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background-color: #6c757d;
+  border: 0;
+  outline: none;
+}
+
+.form-body {
+  text-align: center;
+  border: 5px solid #7a03f9;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: PP Neue Machina, sans-serif;
+  display: flex;
+}
+
+.form-body .form-select, .form-body .form-control {
+  border-radius: 15px;
+  min-width: 700px;
+  padding: 15px 30px;
+  font-size: 20px;
+}
+
+.form-body .form-gap {
+  margin-bottom: 30px;
+}
 /*# sourceMappingURL=index.d8cb0823.css.map */

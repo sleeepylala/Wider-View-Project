@@ -501,3 +501,55 @@
   line-height: 27px;
   color: #ffffff;
 }
+
+.section-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 5px solid green;
+}
+
+.btn-primary {
+  background-color: #6c757d;
+  outline: none;
+  border: 0px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.form-body {
+  border: 5px solid rgb(122, 3, 249);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-family: "PP Neue Machina", sans-serif;
+}
+.form-body .form-select {
+  min-width: 700px;
+  padding: 15px 30px;
+  font-size: 20px;
+  border-radius: 15px;
+}
+.form-body .form-control {
+  min-width: 700px;
+  padding: 15px 30px;
+  font-size: 20px;
+  border-radius: 15px;
+}
+.form-body .form-gap {
+  margin-bottom: 30px;
+}
