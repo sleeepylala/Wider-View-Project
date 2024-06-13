@@ -4,20 +4,53 @@
   padding: 0;
 }
 
-.navbar-container {
-  flex-direction: row;
-  justify-content: end;
-  padding: 20px;
-  display: flex;
+@font-face {
+  font-family: Rubik;
+  src: url("Rubik-Italic-VariableFont_wght.4f4d6f0b.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
 }
 
-.navbar-dx {
+@font-face {
+  font-family: Rubik;
+  src: url("Rubik-VariableFont_wght.05684dcf.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: PP Neue Machina;
+  src: url("PPNeueMachina-Light.0a420032.otf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: PP Neue Machina;
+  src: url("PPNeueMachina-Regular.f77c3304.otf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: PP Neue Machina;
+  src: url("PPNeueMachina-UltraBold.c7572d5b.otf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+.navbar-container {
   -webkit-column-gap: 20px;
   -moz-column-gap: 20px;
   flex-direction: row;
-  align-items: center;
+  justify-content: end;
   column-gap: 20px;
+  padding: 20px 40px;
   display: flex;
+}
+
+.navbar-container .logo {
+  z-index: 100;
 }
 
 .navbar-toggler {
@@ -33,6 +66,76 @@
   align-items: center;
   height: 10px;
   font-size: 20px;
+  display: flex;
+}
+
+.navbar-dx {
+  -webkit-column-gap: 20px;
+  -moz-column-gap: 20px;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 20px;
+  display: flex;
+}
+
+.navbar-dx a {
+  color: #1e2c2c;
+  font-family: PP Neue Machina, sans-serif;
+}
+
+.navbar-dx .offcanvas-body {
+  background-color: #00a59c;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  flex-direction: column;
+  display: flex;
+}
+
+.navbar-dx .offcanvas-body .navbar-nav {
+  text-align: end;
+  justify-content: center;
+  font-size: 24px;
+  display: flex;
+}
+
+.navbar-dx .offcanvas {
+  z-index: -10;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.modal-backdrop {
+  z-index: -10000;
+}
+
+.social-lang {
+  flex-direction: row;
+  justify-content: space-around;
+  display: flex;
+}
+
+.social-lang a {
+  text-decoration: none;
+}
+
+.social-lang p {
+  float: left !important;
+}
+
+.social-lang .social-icon {
+  text-align: start;
+  -webkit-column-gap: 15px;
+  -moz-column-gap: 15px;
+  align-items: center;
+  column-gap: 15px;
+  font-size: 20px;
+  display: flex;
+}
+
+.social-lang .lang-menu {
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 13px;
   display: flex;
 }
 
