@@ -198,7 +198,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  min-height: 900px;
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 1;
 }
@@ -304,4 +304,94 @@
   text-decoration: none;
   font-size: 20px;
   line-height: 27px;
+}
+
+.section-steps {
+  padding-bottom: 100px;
+  padding-top: 30px;
+}
+
+.wrapper-section-steps {
+  width: 1140px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.container-steps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 60px;
+     -moz-column-gap: 60px;
+          column-gap: 60px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+.container-steps .section-dx {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  padding: 10px;
+  position: relative;
+}
+.container-steps .section-dx .container-number {
+  font-size: 24px;
+  line-height: 26px;
+  font-family: "Rubik", sans-serif;
+  color: #5c00ff;
+  padding-bottom: 20px;
+}
+.container-steps .section-dx p {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  line-height: 27px;
+  color: #606060;
+}
+.container-steps .section-sx {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 400px;
+  position: relative;
+  background-color: #ffffff;
+  z-index: 9;
+  padding: 100px 50px;
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(83, 56, 242, 0.18);
+          box-shadow: 0px 0px 20px 0px rgba(83, 56, 242, 0.18);
+  color: #5c00ff;
+  font-family: "PP Neue Machina", sans-serif;
+}
+.container-steps .section-sx h4 {
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 39px;
+  letter-spacing: -1px;
+  padding-bottom: 10px;
+}
+.container-steps .section-sx .tabella {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+.container-steps .section-sx .tabella .voce {
+  font-size: 20px;
+  line-height: 22px;
+  letter-spacing: -1px;
+  font-weight: 300;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
