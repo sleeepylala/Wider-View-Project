@@ -4,6 +4,12 @@
   padding: 0;
 }
 
+.wrapper {
+  width: 1140px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
 @font-face {
   font-family: Rubik;
   src: url("Rubik-Italic-VariableFont_wght.4f4d6f0b.ttf") format("truetype");
@@ -265,12 +271,6 @@
   padding-bottom: 100px;
 }
 
-.wrapper-section-steps {
-  width: 1140px;
-  margin: 0 auto;
-  overflow: hidden;
-}
-
 .container-steps {
   -webkit-column-gap: 60px;
   -moz-column-gap: 60px;
@@ -336,5 +336,20 @@
   font-size: 20px;
   font-weight: 300;
   line-height: 22px;
+}
+
+.container-h1-bio {
+  align-items: center;
+  display: flex;
+}
+
+.container-h1-bio .bio-h1 {
+  color: #000;
+  max-width: 900px;
+  padding-bottom: 50px;
+  font-family: PP Neue Machina, sans-serif;
+  font-size: 57px;
+  font-weight: 500;
+  line-height: 60px;
 }
 /*# sourceMappingURL=index.d8cb0823.css.map */

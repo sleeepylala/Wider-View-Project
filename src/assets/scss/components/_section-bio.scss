@@ -1,0 +1,14 @@
+.container-h1-bio {
+  display: flex;
+  align-items: center;
+
+  .bio-h1 {
+    font-family: $font-family-pp-neue-machina;
+    line-height: 60px;
+    font-weight: 500;
+    max-width: 900px;
+    color: #000000;
+    padding-bottom: 50px;
+    font-size: 57px;
+  }
+}
