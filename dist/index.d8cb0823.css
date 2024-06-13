@@ -44,19 +44,23 @@
   -moz-column-gap: 20px;
   flex-direction: row;
   justify-content: end;
+  align-items: center;
   column-gap: 20px;
-  padding: 20px 40px;
+  padding: 30px 40px;
   display: flex;
 }
 
 .navbar-container .logo {
   z-index: 100;
+  width: 80px;
 }
 
 .navbar-toggler {
   background-color: #fff;
   border-radius: 100%;
-  padding: 10px 13px;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
 }
 
 .navbar-toggler .icon-minus {
@@ -65,7 +69,7 @@
   justify-content: center;
   align-items: center;
   height: 10px;
-  font-size: 20px;
+  font-size: 15px;
   display: flex;
 }
 
@@ -94,7 +98,7 @@
 .navbar-dx .offcanvas-body .navbar-nav {
   text-align: end;
   justify-content: center;
-  font-size: 24px;
+  font-size: 32px;
   display: flex;
 }
 
@@ -102,15 +106,17 @@
   z-index: -10;
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
+  min-width: 620px;
 }
 
 .modal-backdrop {
-  z-index: -10000;
+  display: none;
 }
 
 .social-lang {
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 0 20px;
   display: flex;
 }
 
@@ -144,6 +150,46 @@
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 100vh;
+  height: 850px;
+}
+
+.container-hero:before {
+  content: "";
+  z-index: 1;
+  background-color: #000000b3;
+  width: 100%;
+  height: 850px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.container-hero .container-parent-hero {
+  flex-direction: column;
+  justify-content: center;
+  height: 600px;
+  display: flex;
+}
+
+.container-hero .container-hero-text {
+  color: #fff;
+  z-index: 2;
+  max-width: 1050px;
+  padding-left: 170px;
+  position: relative;
+}
+
+.container-hero .container-hero-text h1 {
+  padding-bottom: 30px;
+  font-family: PP Neue Machina, sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 45px;
+}
+
+.container-hero .container-hero-text p {
+  font-family: Rubik, sans-serif;
+  font-size: 20px;
+  line-height: 32px;
 }
 /*# sourceMappingURL=index.d8cb0823.css.map */

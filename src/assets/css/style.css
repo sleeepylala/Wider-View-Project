@@ -46,19 +46,25 @@
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
-  padding: 20px 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 40px;
   -webkit-column-gap: 20px;
      -moz-column-gap: 20px;
           column-gap: 20px;
 }
 .navbar-container .logo {
   z-index: 100;
+  width: 80px;
 }
 
 .navbar-toggler {
   border-radius: 100%;
-  padding: 10px 13px;
+  padding: 10px;
   background-color: white;
+  width: 40px;
+  height: 40px;
 }
 .navbar-toggler .icon-minus {
   display: -webkit-box;
@@ -74,7 +80,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-size: 20px;
+  font-size: 15px;
   height: 10px;
   color: black;
 }
@@ -117,17 +123,18 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 24px;
+  font-size: 32px;
   text-align: end;
 }
 .navbar-dx .offcanvas {
   border-bottom-left-radius: 25px;
   border-top-left-radius: 25px;
+  min-width: 620px;
   z-index: -10;
 }
 
 .modal-backdrop {
-  z-index: -10000;
+  display: none;
 }
 
 .social-lang {
@@ -138,8 +145,10 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 20px;
 }
 .social-lang a {
   text-decoration: none;
@@ -174,8 +183,50 @@
 
 .container-hero {
   width: 100%;
-  height: 100vh;
+  height: 850px;
   background-image: url("../images/Immagine-Slider-da-ripetere.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+}
+.container-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 850px;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+.container-hero .container-parent-hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 600px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.container-hero .container-hero-text {
+  position: relative;
+  color: white;
+  max-width: 1050px;
+  padding-left: 170px;
+  z-index: 2;
+}
+.container-hero .container-hero-text h1 {
+  font-family: "PP Neue Machina", sans-serif;
+  font-size: 48px;
+  line-height: 45px;
+  font-weight: 400;
+  padding-bottom: 30px;
+}
+.container-hero .container-hero-text p {
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+  line-height: 32px;
 }

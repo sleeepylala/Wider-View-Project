@@ -2,23 +2,28 @@
   display: flex;
   flex-direction: row;
   justify-content: end;
-  padding: 20px 40px;
+  align-items: center;
+  padding: 30px 40px;
   column-gap: 20px;
   .logo {
     z-index: 100;
+    width: 80px;
   }
 }
+
 .navbar-toggler {
   border-radius: 100%;
-  padding: 10px 13px;
+  padding: 10px;
   background-color: white;
+  width: 40px;
+  height: 40px;
 
   .icon-minus {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    font-size: 20px;
+    font-size: 15px;
     height: 10px;
     color: black;
   }
@@ -39,31 +44,34 @@
     border-bottom-left-radius: 25px;
     border-top-left-radius: 25px;
     display: flex;
-
     flex-direction: column;
     background-color: $secondary-color;
 
     .navbar-nav {
       display: flex;
       justify-content: center;
-      font-size: 24px;
+      font-size: 32px;
+
       text-align: end;
     }
   }
   .offcanvas {
     border-bottom-left-radius: 25px;
     border-top-left-radius: 25px;
+    min-width: 620px;
     z-index: -10;
   }
 }
 
 .modal-backdrop {
-  z-index: -10000;
+  display: none;
 }
 .social-lang {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 0 20px;
+
   a {
     text-decoration: none;
   }
