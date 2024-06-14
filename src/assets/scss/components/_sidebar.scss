@@ -5,8 +5,9 @@
   align-items: center;
   padding: 30px 40px;
   column-gap: 20px;
+  z-index: 3000 !important;
   .logo {
-    z-index: 100000;
+    z-index: 3000 !important;
     width: 80px;
   }
 }
