@@ -21,11 +21,6 @@ body:before {
   left: 0;
 }
 
-.wrapper {
-  padding: 30px 150px;
-  overflow: hidden;
-}
-
 @font-face {
   font-family: Rubik;
   src: url("Rubik-Italic-VariableFont_wght.4f4d6f0b.ttf") format("truetype");
@@ -418,6 +413,8 @@ body:before {
 
 .section-form {
   justify-content: center;
+  padding-left: 30px;
+  padding-right: 30px;
   display: flex;
 }
 
@@ -426,26 +423,20 @@ body:before {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
   font-family: PP Neue Machina, sans-serif;
   display: flex;
 }
 
-.form-body .form-select {
+.form-body .form-select, .form-body .form-control {
   border-radius: 15px;
-  min-width: 700px;
-  padding: 15px 30px;
-  font-size: 20px;
-}
-
-.form-body .form-control {
-  border-radius: 15px;
-  max-width: 700px;
   padding: 15px 30px;
   font-size: 20px;
 }
 
 .form-body .form-gap {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 input[type="file"] {

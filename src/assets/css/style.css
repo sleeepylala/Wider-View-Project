@@ -22,11 +22,6 @@ body::before {
   z-index: 1;
 }
 
-.wrapper {
-  padding: 30px 150px;
-  overflow: hidden;
-}
-
 @font-face {
   font-family: "Rubik";
   src: url("../fonts/Rubik-font-p/Rubik-Italic-VariableFont_wght.ttf") format("truetype");
@@ -506,6 +501,8 @@ body::before {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .form-body {
@@ -524,21 +521,21 @@ body::before {
           align-items: center;
   text-align: center;
   font-family: "PP Neue Machina", sans-serif;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 .form-body .form-select {
-  min-width: 700px;
   padding: 15px 30px;
   font-size: 20px;
   border-radius: 15px;
 }
 .form-body .form-control {
-  max-width: 700px;
   padding: 15px 30px;
   font-size: 20px;
   border-radius: 15px;
 }
 .form-body .form-gap {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 input[type=file] {
