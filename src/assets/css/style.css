@@ -8,17 +8,22 @@
 
 body {
   background-image: url("../images/Immagine-Slider-da-ripetere.jpg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  height: 100vh;
+  overflow-x: hidden;
 }
+
 body::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  min-height: 900px;
-  background-color: rgba(0, 0, 0, 0.7);
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Overlay semitrasparente */
   z-index: 1;
 }
 
