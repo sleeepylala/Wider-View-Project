@@ -6,6 +6,8 @@
   flex-direction: column;
   justify-content: center;
   padding: 30px 0px;
+  padding-left: $padding-left-wrapper;
+  padding-right: $padding-right-wrapper;
   .container-logo {
     padding: 30px 50px;
   }
@@ -45,5 +47,28 @@
     border-bottom: 1px solid #1b2727;
     border-radius: 0;
     padding-bottom: 15px;
+  }
+}
+
+/* Media query per schermi piccoli */
+@media (max-width: 576px) {
+  .container-columns {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    .container-certificazioni {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding-top: 30px;
+    }
+  }
+  .container-columns > div {
+    margin-bottom: 20px;
+  }
+  .container-copyright {
+    text-align: center;
   }
 }

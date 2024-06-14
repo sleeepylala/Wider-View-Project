@@ -507,7 +507,7 @@ input[type="file"] {
   border-top-right-radius: 25px;
   flex-direction: column;
   justify-content: center;
-  padding: 30px 0;
+  padding: 30px;
   display: flex;
   box-shadow: 0 0 20px #00000029;
 }
@@ -553,5 +553,29 @@ input[type="file"] {
   border-bottom: 1px solid #1b2727;
   border-radius: 0;
   padding-bottom: 15px;
+}
+
+@media (width <= 576px) {
+  .container-columns {
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container-columns .container-certificazioni {
+    flex-direction: row;
+    align-items: center;
+    padding-top: 30px;
+    display: flex;
+  }
+
+  .container-columns > div {
+    margin-bottom: 20px;
+  }
+
+  .container-copyright {
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=index.d8cb0823.css.map */
