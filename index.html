@@ -239,23 +239,26 @@
               </div>
 
               <div class="col-md-12 form-gap">
-                <input
-                  class="form-control"
-                  type="text"
-                  name="phone"
-                  placeholder="Numero di Telefono*"
-                  required
-                />
-              </div>
-
-              <div class="col-md-12 form-gap">
-                <input
-                  class="form-control"
-                  type="email"
-                  name="email"
-                  placeholder="Indirizzo Email*"
-                  required
-                />
+                <div class="row">
+                  <div class="col">
+                    <input
+                      class="form-control"
+                      type="text"
+                      name="phone"
+                      placeholder="Numero di Telefono*"
+                      required
+                    />
+                  </div>
+                  <div class="col">
+                    <input
+                      class="form-control"
+                      type="email"
+                      name="email"
+                      placeholder="Indirizzo Email*"
+                      required
+                    />
+                  </div>
+                </div>
               </div>
 
               <div class="col-md-12 form-gap">
@@ -279,21 +282,76 @@
               </div>
 
               <div class="col-md-12 form-gap">
-                <input
-                  class="form-control"
-                  type="password"
-                  name="password"
-                  placeholder="Carica il tuo CV*"
-                  required
-                />
+                <label class="custom-file-upload form-control">
+                  <input type="file" />
+                  Carica il tuo CV*
+                  <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                </label>
               </div>
 
               <div class="col-md-12 form-gap">
+                <label class="custom-file-upload form-control">
+                  <input type="file" />
+                  Carica il tuo Portfolio*
+                  <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                </label>
+              </div>
+
+              <div class="col-md-12 form-gap">
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="10"
+                  placeholder="Scrivici di più su di te! Cosa senti di poter offrire a Wider View e cosa pensi che Wider View possa offrirti?"
+                ></textarea>
+              </div>
+              <div class="col-md-12 form-gap">
+                <p>
+                  Vuoi mostrare altro di te e dei tuoi progetti? Siamo
+                  tutt’orecchi!
+                </p>
+              </div>
+              <div class="col-md-12 form-gap">
+                <div class="row">
+                  <div class="col">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Il tuo profilo Linkedin"
+                    />
+                  </div>
+                  <div class="col">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Il tuo profilo Behance"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12 form-gap">
+                <div class="row">
+                  <div class="col">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Il tuo profilo Instagram"
+                    />
+                  </div>
+                  <div class="col">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Il tuo profilo Facebook"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12 form-gap">
                 <input
                   class="form-control"
-                  type="password"
-                  name="password"
-                  placeholder="Carica il tuo Portfolio*"
+                  type="text"
+                  placeholder="Il tuo sito personale o altri link..."
                   required
                 />
               </div>
@@ -303,20 +361,29 @@
                   class="form-check-input"
                   type="checkbox"
                   value=""
-                  id="invalidCheck"
                   required
                 />
-                <label class="form-check-label form-gap"
-                  >I confirm that all data are correct</label
+                <label class="form-check-label"
+                  >*Ho preso visione dell’
+                  <a href="#">informativa sulla privacy.</a></label
                 >
-                <div class="invalid-feedback">
-                  Please confirm that the entered data are all correct!
-                </div>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  required
+                />
+                <label class="form-check-label"
+                  >*Ho preso visione della
+                  <a href="#">privacy policy per i candidati.</a></label
+                >
               </div>
 
-              <div class="form-button mt-3 form-gap">
-                <button id="submit" type="submit" class="btn btn-primary">
-                  Register
+              <div class="form-button">
+                <button id="submit" type="submit" class="btn">
+                  Invia la tua canditatura 💌
                 </button>
               </div>
             </form>

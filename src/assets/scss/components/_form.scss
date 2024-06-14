@@ -29,7 +29,7 @@
   }
 
   .form-control {
-    min-width: 700px;
+    max-width: 700px;
     padding: 15px 30px;
     font-size: 20px;
     border-radius: 15px;
@@ -37,4 +37,65 @@
   .form-gap {
     margin-bottom: 30px;
   }
+}
+
+input[type="file"] {
+  display: none;
+}
+.custom-file-upload {
+  color: #6c757d;
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+  text-align: start;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 15px !important;
+}
+
+.form-check {
+  display: flex;
+  justify-content: start;
+  align-items: baseline;
+  margin-left: 10px;
+}
+
+.form-check-input {
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.form-check-label {
+  font-size: small;
+  padding-left: 10px;
+  a {
+    color: black;
+  }
+}
+
+.form-button {
+  display: flex;
+  justify-content: end;
+  padding-top: 20px;
+  .btn {
+    width: auto;
+    background: transparent;
+    box-shadow: none;
+    height: auto;
+    padding: 0;
+    border-bottom: 1px solid #1b2727;
+    border-radius: 0;
+    padding-bottom: 15px;
+    cursor: not-allowed;
+    font-size: 20px;
+  }
+}
+
+.form-control,
+.form-select {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+  border: none;
 }
