@@ -234,16 +234,7 @@ body::before {
 }
 
 .section-ui-developing {
-  margin-top: 130px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 600px;
+  padding: 100px 120px;
   border-radius: 25px;
   z-index: 1000 !important;
   position: relative;
@@ -264,9 +255,6 @@ body::before {
   display: inline-block;
   color: #ffffff;
 }
-.section-ui-developing .container-p {
-  width: 650px;
-}
 .section-ui-developing h2 {
   font-family: "PP Neue Machina", sans-serif;
   font-size: 48px;
@@ -281,10 +269,12 @@ body::before {
 }
 
 .container-button {
-  width: 550px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -304,6 +294,32 @@ body::before {
   line-height: 27px;
 }
 
+@media (max-width: 991px) {
+  .section-ui-developing {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: start;
+    padding: 80px 0 !important;
+  }
+  .container-p {
+    padding-bottom: 80px;
+  }
+  .container-section-text {
+    padding: 0 15px !important;
+  }
+}
+/* Aggiunta del gap tra le colonne per schermi di grandi dimensioni */
+@media (min-width: 992px) {
+  .col-lg-6 {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
 .section-steps {
   padding-bottom: 90px;
   padding-top: 50px;
@@ -361,8 +377,8 @@ body::before {
   padding: 100px 50px;
   color: #5c00ff;
   font-family: "PP Neue Machina", sans-serif;
-  -webkit-box-shadow: 0px 0px 20px 0px rgba(83, 56, 242, 0.18);
-          box-shadow: 0px 0px 20px 0px rgba(83, 56, 242, 0.18);
+  -webkit-box-shadow: 14px -5px 20px -25px rgba(83, 56, 242, 0.5);
+          box-shadow: 14px -5px 20px -25px rgba(83, 56, 242, 0.5);
 }
 .container-steps .section-sx h4 {
   font-weight: 500;

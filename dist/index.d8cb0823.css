@@ -195,11 +195,7 @@ body:before {
 .section-ui-developing {
   background-color: #5c00ff;
   border-radius: 25px;
-  justify-content: space-around;
-  align-items: center;
-  height: 600px;
-  margin-top: 130px;
-  display: flex;
+  padding: 100px 120px;
   position: relative;
   z-index: 1000 !important;
 }
@@ -221,10 +217,6 @@ body:before {
   display: inline-block;
 }
 
-.section-ui-developing .container-p {
-  width: 650px;
-}
-
 .section-ui-developing h2 {
   padding-bottom: 30px;
   font-family: PP Neue Machina, sans-serif;
@@ -241,7 +233,7 @@ body:before {
 
 .container-button {
   flex-flow: wrap;
-  width: 550px;
+  align-items: center;
   display: flex;
 }
 
@@ -255,6 +247,30 @@ body:before {
   line-height: 27px;
   text-decoration: none;
   color: #1e2c2c !important;
+}
+
+@media (width <= 991px) {
+  .section-ui-developing {
+    text-align: start;
+    flex-direction: column;
+    display: flex;
+    padding: 80px 0 !important;
+  }
+
+  .container-p {
+    padding-bottom: 80px;
+  }
+
+  .container-section-text {
+    padding: 0 15px !important;
+  }
+}
+
+@media (width >= 992px) {
+  .col-lg-6 {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }
 
 .section-steps {
@@ -302,7 +318,7 @@ body:before {
   padding: 100px 50px;
   font-family: PP Neue Machina, sans-serif;
   position: relative;
-  box-shadow: 0 0 20px #5338f22e;
+  box-shadow: 14px -5px 20px -25px #5338f280;
 }
 
 .container-steps .section-sx h4 {

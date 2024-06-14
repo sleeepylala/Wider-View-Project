@@ -1,9 +1,5 @@
 .section-ui-developing {
-  margin-top: 130px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 600px;
+  padding: 100px $padding-left-wrapper * 6;
   border-radius: 25px;
   z-index: 1000 !important;
   position: relative;
@@ -24,9 +20,7 @@
       color: #ffffff;
     }
   }
-  .container-p {
-    width: 650px;
-  }
+
   h2 {
     font-family: $font-family-pp-neue-machina;
     font-size: 48px;
@@ -44,8 +38,8 @@
 }
 
 .container-button {
-  width: 550px;
   display: flex;
+  align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
   button {
@@ -58,5 +52,28 @@
     text-decoration: none;
     font-size: 20px;
     line-height: 27px;
+  }
+}
+
+@media (max-width: 991px) {
+  .section-ui-developing {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    padding: 80px 0 !important;
+  }
+  .container-p {
+    padding-bottom: 80px;
+  }
+  .container-section-text {
+    padding: 0 15px !important;
+  }
+}
+
+/* Aggiunta del gap tra le colonne per schermi di grandi dimensioni */
+@media (min-width: 992px) {
+  .col-lg-6 {
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
