@@ -1,48 +1,27 @@
-.container-hero {
-  border: 5px solid red;
-  width: 100%;
-  height: max-content;
-  background-image: url("../images/Immagine-Slider-da-ripetere.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
+.container-parent-hero {
+  display: flex;
+  height: 600px;
+  flex-direction: column;
+  justify-content: center;
+}
+.container-hero-text {
   position: relative;
+  color: white;
+  max-width: 1050px;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    min-height: 900px;
-    background-color: rgba(0, 0, 0, 0.7);
-    z-index: 1;
+  padding-left: 170px;
+  z-index: 2;
+
+  h1 {
+    font-family: $font-family-pp-neue-machina;
+    font-size: 48px;
+    line-height: 45px;
+    font-weight: 400;
+    padding-bottom: 30px;
   }
-
-  .container-parent-hero {
-    display: flex;
-    height: 600px;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .container-hero-text {
-    position: relative;
-    color: white;
-    max-width: 1050px;
-
-    padding-left: 170px;
-    z-index: 2;
-
-    h1 {
-      font-family: $font-family-pp-neue-machina;
-      font-size: 48px;
-      line-height: 45px;
-      font-weight: 400;
-      padding-bottom: 30px;
-    }
-    p {
-      font-family: $font-family-rubik;
-      font-size: 20px;
-      line-height: 32px;
-    }
+  p {
+    font-family: $font-family-rubik;
+    font-size: 20px;
+    line-height: 32px;
   }
 }

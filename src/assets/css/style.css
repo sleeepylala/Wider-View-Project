@@ -5,8 +5,24 @@
           box-sizing: border-box;
 }
 
+body {
+  background-image: url("../images/Immagine-Slider-da-ripetere.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 900px;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
 .wrapper {
-  padding: 0 150px;
+  padding: 30px 150px;
   overflow: hidden;
 }
 
@@ -186,28 +202,7 @@
   font-size: 13px;
 }
 
-.container-hero {
-  border: 5px solid red;
-  width: 100%;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
-  background-image: url("../images/Immagine-Slider-da-ripetere.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: relative;
-}
-.container-hero::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  min-height: 900px;
-  background-color: rgba(0, 0, 0, 0.7);
-  z-index: 1;
-}
-.container-hero .container-parent-hero {
+.container-parent-hero {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -220,21 +215,22 @@
       -ms-flex-pack: center;
           justify-content: center;
 }
-.container-hero .container-hero-text {
+
+.container-hero-text {
   position: relative;
   color: white;
   max-width: 1050px;
   padding-left: 170px;
   z-index: 2;
 }
-.container-hero .container-hero-text h1 {
+.container-hero-text h1 {
   font-family: "PP Neue Machina", sans-serif;
   font-size: 48px;
   line-height: 45px;
   font-weight: 400;
   padding-bottom: 30px;
 }
-.container-hero .container-hero-text p {
+.container-hero-text p {
   font-family: "Rubik", sans-serif;
   font-size: 20px;
   line-height: 32px;
@@ -509,19 +505,9 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border: 5px solid green;
-}
-
-.btn-primary {
-  background-color: #6c757d;
-  outline: none;
-  border: 0px;
-  -webkit-box-shadow: none;
-          box-shadow: none;
 }
 
 .form-body {
-  border: 5px solid rgb(122, 3, 249);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

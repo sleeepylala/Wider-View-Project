@@ -3,8 +3,22 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+body {
+  background-image: url("../images/Immagine-Slider-da-ripetere.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 900px;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+  }
+}
 .wrapper {
-  padding: 0 150px;
+  padding: 30px 150px;
   overflow: hidden;
 }
