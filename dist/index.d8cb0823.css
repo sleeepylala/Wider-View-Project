@@ -403,13 +403,7 @@ body:before {
   line-height: 60px;
 }
 
-.container-box1 {
-  justify-content: end;
-  align-items: center;
-  display: flex;
-}
-
-.container-box1 .nome-bio {
+.nome-bio {
   background-color: #01a098;
   border-radius: 14px;
   flex-direction: column;
@@ -418,22 +412,29 @@ body:before {
   box-shadow: 0 0 16px #000;
 }
 
-.container-box1 .nome-bio a {
+.nome-bio a {
   color: #1e2c2c;
   text-decoration: none;
 }
 
-.container-box1 .nome-bio .b1 {
-  color: #fff;
-  font-family: PP Neue Machina, sans-serif;
-  font-size: 35px;
-  line-height: 43px;
+.nome-bio .b1 {
+  color: #fff !important;
+  font-family: PP Neue Machina, sans-serif !important;
+  font-size: 35px !important;
+  line-height: 43px !important;
 }
 
-.container-box1 .nome-bio .b2 {
-  color: #1e2c2c;
-  font-family: PP Neue Machina, sans-serif;
-  font-size: 20px;
+.nome-bio .b2 {
+  padding-bottom: 20px;
+  color: #1e2c2c !important;
+  font-family: PP Neue Machina, sans-serif !important;
+  font-size: 20px !important;
+}
+
+.container-box1 {
+  justify-content: end;
+  align-items: center;
+  display: flex;
 }
 
 .container-desc-img {
@@ -449,11 +450,17 @@ body:before {
 .container-desc-img .container-box2 {
   background-color: #01a098;
   border-radius: 14px;
-  align-items: center;
-  width: 800px;
+  flex-direction: column;
+  max-width: 800px;
   padding: 70px;
   display: flex;
   box-shadow: 0 0 16px #000;
+}
+
+.container-desc-img .container-box2 .nome-bio {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  display: none;
 }
 
 .container-desc-img .container-box2 p {
@@ -463,13 +470,44 @@ body:before {
   line-height: 27px;
 }
 
-@media (width <= 576px) {
+@media (width <= 1200px) {
+  .mobile {
+    display: none;
+  }
+
+  .mobile2 {
+    padding: 0 !important;
+    display: block !important;
+  }
+
+  .container-desc-img {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
   .section-bio {
     padding: 80px 25px !important;
   }
 
   .container-h1-bio .bio-h1 {
     text-align: start;
+  }
+
+  .container-box2 {
+    position: relative;
+  }
+
+  .container-desc-img img {
+    -ms-grid-row-align: center;
+    z-index: 2000;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+    top: -80px;
   }
 }
 
