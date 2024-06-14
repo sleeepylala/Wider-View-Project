@@ -1,27 +1,44 @@
 .container-parent-hero {
   display: flex;
-  height: 600px;
+  min-height: 730px;
   flex-direction: column;
   justify-content: center;
+  align-items: start;
+  padding-left: 150px;
 }
+
 .container-hero-text {
   position: relative;
   color: white;
-  max-width: 1050px;
-
-  padding-left: 170px;
   z-index: 2;
+  text-align: start;
+  max-width: 65%;
+  padding: 0 20px;
 
   h1 {
     font-family: $font-family-pp-neue-machina;
     font-size: 48px;
-    line-height: 45px;
+    line-height: 1.2;
     font-weight: 400;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
   }
+
   p {
     font-family: $font-family-rubik;
     font-size: 20px;
     line-height: 32px;
   }
+}
+
+@media (max-width: 992px) {
+  .container-hero-text {
+    max-width: 100%;
+  }
+  .container-parent-hero {
+    padding: 0 15px !important;
+  }
+}
+
+/* Media query per schermi piccoli */
+@media (max-width: 576px) {
 }

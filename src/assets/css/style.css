@@ -203,7 +203,7 @@ body::before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 600px;
+  min-height: 730px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -211,21 +211,26 @@ body::before {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  padding-left: 150px;
 }
 
 .container-hero-text {
   position: relative;
   color: white;
-  max-width: 1050px;
-  padding-left: 170px;
   z-index: 2;
+  text-align: start;
+  max-width: 65%;
+  padding: 0 20px;
 }
 .container-hero-text h1 {
   font-family: "PP Neue Machina", sans-serif;
   font-size: 48px;
-  line-height: 45px;
+  line-height: 1.2;
   font-weight: 400;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 .container-hero-text p {
   font-family: "Rubik", sans-serif;
@@ -233,6 +238,15 @@ body::before {
   line-height: 32px;
 }
 
+@media (max-width: 992px) {
+  .container-hero-text {
+    max-width: 100%;
+  }
+  .container-parent-hero {
+    padding: 0 15px !important;
+  }
+}
+/* Media query per schermi piccoli */
 .section-ui-developing {
   padding: 100px 120px;
   border-radius: 25px;
