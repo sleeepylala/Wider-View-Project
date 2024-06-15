@@ -265,6 +265,11 @@
   color: #1e2c2c !important;
 }
 
+.container-button button:hover {
+  background: #01a098;
+  color: #fff !important;
+}
+
 @media (width <= 991px) {
   .section-ui-developing {
     text-align: start;
@@ -678,10 +683,6 @@ input[type="file"] {
   }
 }
 
-.swiper {
-  position: relative;
-}
-
 .swiper-slide {
   background-image: url("Immagine-slider-da-ripetere.e8ff8ed7.jpg");
   background-position: center;
@@ -690,6 +691,31 @@ input[type="file"] {
   height: 100vh;
   position: relative;
   overflow-x: hidden;
+}
+
+.swiper-pagination {
+  position: absolute;
+  bottom: 280px !important;
+  left: 200px !important;
+}
+
+.swiper-pagination-bullet {
+  background-color: #a3a3a3 !important;
+  border-radius: 0 !important;
+  width: 32px !important;
+  height: 4px !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #479e97 !important;
+}
+
+.swiper-slide img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 .swiper-slide:before {
@@ -701,5 +727,11 @@ input[type="file"] {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+@media (width <= 992px) {
+  .swiper-pagination {
+    left: 50px !important;
+  }
 }
 /*# sourceMappingURL=index.07fedde6.css.map */

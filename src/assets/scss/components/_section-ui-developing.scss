@@ -59,6 +59,11 @@
     font-size: 20px;
     line-height: 27px;
   }
+
+  button:hover {
+    color: #ffffff !important;
+    background: #01A098;
+  }
 }
 
 @media (max-width: 991px) {
