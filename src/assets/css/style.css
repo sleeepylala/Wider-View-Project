@@ -263,6 +263,7 @@
   z-index: 1000 !important;
   position: relative;
   background-color: rgb(92, 0, 255);
+  margin-top: -50px;
 }
 .section-ui-developing .container-section-text {
   padding-left: 50px;
@@ -852,8 +853,7 @@ input[type=file] {
   }
 }
 .swiper {
-  width: 100vw;
-  height: 900px;
+  position: relative;
 }
 
 .swiper-slide {

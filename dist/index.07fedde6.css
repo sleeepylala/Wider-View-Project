@@ -210,6 +210,7 @@
 .section-ui-developing {
   background-color: #5c00ff;
   border-radius: 25px;
+  margin-top: -50px;
   padding: 100px 120px;
   position: relative;
   z-index: 1000 !important;
@@ -678,8 +679,7 @@ input[type="file"] {
 }
 
 .swiper {
-  width: 100vw;
-  height: 900px;
+  position: relative;
 }
 
 .swiper-slide {
