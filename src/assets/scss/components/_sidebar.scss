@@ -7,6 +7,7 @@
   padding: 30px 40px;
   column-gap: 20px;
   z-index: 3000 !important;
+
   .logo {
     z-index: 3000 !important;
     width: 80px;
@@ -42,6 +43,11 @@
     font-family: $font-family-pp-neue-machina;
   }
 
+  a.nav-link:hover {
+    color: white;
+    text-decoration: underline;
+  }
+
   .offcanvas-body {
     border-bottom-left-radius: 25px;
     border-top-left-radius: 25px;
@@ -57,6 +63,7 @@
       text-align: end;
     }
   }
+
   .offcanvas {
     border-bottom-left-radius: 25px;
     border-top-left-radius: 25px;
@@ -68,6 +75,7 @@
 .modal-backdrop {
   display: none;
 }
+
 .social-lang {
   display: flex;
   flex-direction: row;
@@ -77,9 +85,16 @@
   a {
     text-decoration: none;
   }
+
+  a:hover {
+    color: #606060;
+    text-decoration: underline;
+  }
+
   p {
     float: left !important;
   }
+
   .social-icon {
     display: flex;
     text-align: start;
@@ -87,11 +102,22 @@
     font-size: 20px;
     align-items: center;
   }
+
   .lang-menu {
     display: flex;
     align-items: center;
 
     flex-wrap: wrap;
     font-size: 13px;
+  }
+}
+
+/* Media query per schermi piccoli */
+@media (max-width: 600px) {
+  .social-lang {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
