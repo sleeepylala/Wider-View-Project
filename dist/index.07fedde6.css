@@ -358,6 +358,10 @@
 
 .container-steps .section-sx .tabella .voce {
   letter-spacing: -1px;
+  text-align: start;
+  color: #5c00ff;
+  background: none;
+  border: none;
   padding-top: 10px;
   padding-bottom: 10px;
   font-size: 20px;
@@ -382,6 +386,41 @@
     align-items: start;
     display: flex;
   }
+}
+
+.testo {
+  display: none;
+}
+
+.testo.active {
+  display: block;
+}
+
+.voce.active {
+  color: #333;
+  font-weight: bold;
+}
+
+.slide-enter {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.slide-enter-active {
+  opacity: 1;
+  transition: opacity .8s, transform .8s, -webkit-transform .8s;
+  transform: translateX(0%);
+}
+
+.slide-exit {
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+.slide-exit-active {
+  opacity: 0;
+  transition: opacity .8s, transform .8s, -webkit-transform .8s;
+  transform: translateX(-100%);
 }
 
 .section-bio {

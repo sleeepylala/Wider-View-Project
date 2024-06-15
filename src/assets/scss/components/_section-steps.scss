@@ -20,6 +20,7 @@
     padding: 10px;
 
     position: relative;
+
     .container-number {
       font-size: 24px;
       line-height: 26px;
@@ -27,6 +28,7 @@
       color: $text-color-blue;
       padding-bottom: 20px;
     }
+
     p {
       font-family: $font-family-rubik;
 
@@ -54,10 +56,12 @@
       letter-spacing: -1px;
       padding-bottom: 10px;
     }
+
     .tabella {
       display: flex;
       flex-direction: column;
       height: 100%;
+
       .voce {
         font-size: 20px;
         line-height: 22px;
@@ -65,6 +69,10 @@
         font-weight: 300;
         padding-top: 10px;
         padding-bottom: 10px;
+        border: none;
+        background: none;
+        text-align: start;
+        color: $text-color-blue;
       }
     }
   }
@@ -88,4 +96,41 @@
     flex-direction: row;
     align-items: start;
   }
+}
+
+.testo {
+  display: none;
+}
+
+
+.testo.active {
+  display: block;
+}
+
+.voce.active {
+  font-weight: bold;
+  color: #333;
+}
+
+
+.slide-enter {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.slide-enter-active {
+  opacity: 1;
+  transform: translateX(0%);
+  transition: opacity 800ms, transform 800ms;
+}
+
+.slide-exit {
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+.slide-exit-active {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 800ms, transform 800ms;
 }
