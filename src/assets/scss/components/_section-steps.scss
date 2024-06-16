@@ -88,11 +88,26 @@
 
 .testo.active {
   display: block;
+
 }
 
-.voce.active {
-  font-weight: bold;
-  color: #333;
+
+.voce {
+  &.voce:hover {
+    font-weight: 500 !important;
+    padding-left: 25px;
+    background-color: transparent;
+    background: url("../images/circle-dot-icon.png") no-repeat 1px 9px !important;
+  }
+
+
+  &.active {
+    font-weight: 500 !important;
+    background: url("../images/circle-dot-icon.png") no-repeat 1px 9px !important;
+    padding-left: 25px;
+  }
+
+
 }
 
 

@@ -377,9 +377,17 @@
   display: block;
 }
 
+.voce.voce:hover {
+  background-color: #0000;
+  padding-left: 25px;
+  background: url("circle-dot-icon.6a69f084.png") 1px 9px no-repeat !important;
+  font-weight: 500 !important;
+}
+
 .voce.active {
-  color: #333;
-  font-weight: bold;
+  padding-left: 25px;
+  background: url("circle-dot-icon.6a69f084.png") 1px 9px no-repeat !important;
+  font-weight: 500 !important;
 }
 
 .slide-enter {
