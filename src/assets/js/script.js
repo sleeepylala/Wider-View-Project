@@ -1,3 +1,10 @@
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+// Inizializza AOS
+AOS.init();
+
+
 // Mostra la descrizione iniziale
 document.addEventListener('DOMContentLoaded', function () {
   showStep(1); // Mostra il primo step di default
