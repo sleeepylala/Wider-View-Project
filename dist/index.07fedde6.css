@@ -578,7 +578,7 @@
   text-align: center;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  min-width: 50%;
   padding-left: 20px;
   padding-right: 20px;
   font-family: PP Neue Machina, sans-serif;
@@ -587,8 +587,9 @@
 
 .form-body .form-select, .form-body .form-control {
   border-radius: 15px;
-  padding: 15px 30px;
-  font-size: 20px;
+  max-width: 100%;
+  padding: 20px;
+  font-size: 1.2em;
 }
 
 .form-body .form-gap {
@@ -656,6 +657,33 @@ input[type="file"] {
   border: none;
   transition: box-shadow .3s ease-in-out, -webkit-box-shadow .3s ease-in-out;
   box-shadow: 0 4px 15px #0000001a;
+}
+
+.form-social {
+  text-align: start;
+  background-position: 20px 20px;
+  background-repeat: no-repeat;
+  align-content: center;
+  align-items: center;
+  padding-left: 65px !important;
+}
+
+.linkedin {
+  background-image: url("linkedin.9edde7c4.png");
+}
+
+.behance {
+  background-image: url("behance.527192eb.png");
+  background-position: 20px 22px;
+}
+
+.instagram {
+  background-image: url("instagram.38db9f8b.png");
+  background-position: 20px 22px;
+}
+
+.facebook {
+  background-image: url("facebook.574fb17a.png");
 }
 
 .container-footer {

@@ -3,29 +3,34 @@
   justify-content: center;
   padding-left: $padding-left-wrapper;
   padding-right: $padding-right-wrapper;
+
 }
 
 .form-body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+
   text-align: center;
   font-family: $font-family-pp-neue-machina;
   padding-left: $padding-left-wrapper;
   padding-right: $padding-right-wrapper;
+  min-width: 50%;
 
-  .form-select {
-    padding: 15px 30px;
-    font-size: 20px;
-    border-radius: 15px;
-  }
 
+
+  .form-select,
   .form-control {
-    padding: 15px 30px;
-    font-size: 20px;
+    padding: 20px 20px;
+    font-size: 1.2em;
     border-radius: 15px;
+    max-width: 100%;
+
+
+
+
   }
+
   .form-gap {
     margin-bottom: 10px;
   }
@@ -34,6 +39,7 @@
 input[type="file"] {
   display: none;
 }
+
 .custom-file-upload {
   color: #6c757d;
   border: 1px solid #ccc;
@@ -62,6 +68,7 @@ input[type="file"] {
 .form-check-label {
   font-size: small;
   padding-left: 10px;
+
   a {
     color: black;
   }
@@ -72,6 +79,7 @@ input[type="file"] {
   justify-content: end;
   padding-top: 40px;
   padding-bottom: 80px;
+
   .btn {
     width: auto;
     background: transparent;
@@ -91,4 +99,33 @@ input[type="file"] {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease-in-out;
   border: none;
+}
+
+.form-social {
+  background-repeat: no-repeat;
+  background-position: 20px 20px;
+  padding-left: 65px !important;
+  align-content: center;
+  align-items: center;
+  text-align: start;
+
+
+}
+
+.linkedin {
+  background-image: url("../images/linkedin.png");
+}
+
+.behance {
+  background-image: url("../images/behance.png");
+  background-position: 20px 22px;
+}
+
+.instagram {
+  background-image: url("../images/instagram.png");
+  background-position: 20px 22px;
+}
+
+.facebook {
+  background-image: url("../images/facebook.png");
 }
