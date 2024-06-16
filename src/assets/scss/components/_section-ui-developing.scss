@@ -23,6 +23,11 @@
       line-height: 27px;
       display: inline-block;
       color: #ffffff;
+
+      &:hover {
+        color: $text-color-hover;
+        border-bottom-color: $text-color-hover;
+      }
     }
   }
 
@@ -62,7 +67,7 @@
 
   button:hover {
     color: #ffffff !important;
-    background: #01A098;
+    background: $text-color-hover;
   }
 }
 

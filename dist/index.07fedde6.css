@@ -233,6 +233,11 @@
   display: inline-block;
 }
 
+.section-ui-developing .container-section-text .cta:hover {
+  color: #01a098;
+  border-bottom-color: #01a098;
+}
+
 .section-ui-developing h2 {
   padding-bottom: 30px;
   font-family: PP Neue Machina, sans-serif;
@@ -667,6 +672,15 @@ input[type="file"] {
   padding: 30px 50px;
 }
 
+.container-footer .column-1 .icon {
+  padding-right: 10px;
+  font-size: 25px !important;
+}
+
+.container-footer .column-1 .icon:hover {
+  color: #01a098;
+}
+
 .container-footer .container-copyright {
   justify-content: center;
   align-items: center;
@@ -679,6 +693,10 @@ input[type="file"] {
   font-family: PP Neue Machina, sans-serif;
   font-size: 18px;
   text-decoration: none;
+}
+
+.container-footer .container-copyright .link-footer:hover {
+  color: #01a098;
 }
 
 .container-footer .container-copyright span {

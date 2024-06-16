@@ -280,6 +280,10 @@
   display: inline-block;
   color: #ffffff;
 }
+.section-ui-developing .container-section-text .cta:hover {
+  color: #01A098;
+  border-bottom-color: #01A098;
+}
 .section-ui-developing h2 {
   font-family: "PP Neue Machina", sans-serif;
   font-size: 48px;
@@ -826,6 +830,13 @@ input[type=file] {
 .container-footer .container-logo {
   padding: 30px 50px;
 }
+.container-footer .column-1 .icon {
+  font-size: 25px !important;
+  padding-right: 10px;
+}
+.container-footer .column-1 .icon:hover {
+  color: #01A098;
+}
 .container-footer .container-copyright {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -844,6 +855,9 @@ input[type=file] {
   font-family: "PP Neue Machina", sans-serif;
   font-size: 18px;
   text-decoration: none;
+}
+.container-footer .container-copyright .link-footer:hover {
+  color: #01A098;
 }
 .container-footer .container-copyright span {
   padding: 0px 20px;
