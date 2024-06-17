@@ -1,6 +1,6 @@
 .container-parent-hero {
   display: flex;
-  min-height: 730px;
+  min-height: 900px;
   flex-direction: column;
   justify-content: center;
   align-items: start;
@@ -14,6 +14,7 @@
   text-align: start;
   max-width: 65%;
   padding: 0 20px;
+  padding-bottom: 50px;
 
   h1 {
     font-family: $font-family-pp-neue-machina;
@@ -43,13 +44,9 @@
 }
 
 /* Media query per schermi piccoli */
-@media (max-width: 400px) {
+@media (max-width: 450px) {
 
   .container-hero-text {
-
-    padding-top: 100px;
-
-
     h1 {
       padding-bottom: 15px;
       font-size: 35px;

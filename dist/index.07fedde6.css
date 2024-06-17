@@ -165,7 +165,7 @@
   }
 }
 
-@media (width <= 400px) {
+@media (width <= 450px) {
   .navbar-container {
     justify-content: center;
     margin-left: 100px;
@@ -176,7 +176,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: start;
-  min-height: 730px;
+  min-height: 900px;
   padding-left: 150px;
   display: flex;
 }
@@ -186,7 +186,7 @@
   z-index: 2;
   text-align: start;
   max-width: 65%;
-  padding: 0 20px;
+  padding: 0 20px 50px;
   position: relative;
 }
 
@@ -214,11 +214,7 @@
   }
 }
 
-@media (width <= 400px) {
-  .container-hero-text {
-    padding-top: 100px;
-  }
-
+@media (width <= 450px) {
   .container-hero-text h1 {
     padding-bottom: 15px;
     font-size: 35px;
@@ -323,7 +319,7 @@
   }
 }
 
-@media (width <= 400px) {
+@media (width <= 450px) {
   .cta {
     margin-left: 100px;
   }
@@ -775,7 +771,7 @@ input[type="file"] {
   padding-bottom: 15px;
 }
 
-@media (width <= 400px) {
+@media (width <= 450px) {
   .container-columns {
     text-align: center;
     flex-direction: column;
@@ -797,7 +793,7 @@ input[type="file"] {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 100%;
   position: relative;
   overflow-x: hidden;
 }
@@ -847,7 +843,7 @@ input[type="file"] {
 @media (width <= 400px) {
   .swiper-pagination {
     position: absolute;
-    bottom: 150px !important;
+    bottom: 80px !important;
     left: 50% !important;
   }
 }

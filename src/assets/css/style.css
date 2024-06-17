@@ -210,7 +210,7 @@
   }
 }
 /* Media query per schermi piccoli */
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   .navbar-container {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -222,7 +222,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-height: 730px;
+  min-height: 900px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -243,6 +243,7 @@
   text-align: start;
   max-width: 65%;
   padding: 0 20px;
+  padding-bottom: 50px;
 }
 .container-hero-text h1 {
   font-family: "PP Neue Machina", sans-serif;
@@ -266,10 +267,7 @@
   }
 }
 /* Media query per schermi piccoli */
-@media (max-width: 400px) {
-  .container-hero-text {
-    padding-top: 100px;
-  }
+@media (max-width: 450px) {
   .container-hero-text h1 {
     padding-bottom: 15px;
     font-size: 35px;
@@ -377,7 +375,7 @@
   }
 }
 /* Media query per schermi piccoli */
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   .cta {
     margin-left: 100px;
   }
@@ -936,7 +934,7 @@ input[type=file] {
 }
 
 /* Media query per schermi piccoli */
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   .container-columns {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -963,7 +961,7 @@ input[type=file] {
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
-  height: 100vh;
+  height: 100%;
   overflow-x: hidden;
 }
 
@@ -1012,7 +1010,7 @@ input[type=file] {
 @media (max-width: 400px) {
   .swiper-pagination {
     position: absolute;
-    bottom: 150px !important;
+    bottom: 80px !important;
     left: 50% !important;
   }
 }
