@@ -209,6 +209,15 @@
             align-items: center;
   }
 }
+/* Media query per schermi piccoli */
+@media (max-width: 400px) {
+  .navbar-container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 100px;
+  }
+}
 .container-parent-hero {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -257,6 +266,20 @@
   }
 }
 /* Media query per schermi piccoli */
+@media (max-width: 400px) {
+  .container-hero-text {
+    padding-top: 100px;
+  }
+  .container-hero-text h1 {
+    padding-bottom: 15px;
+    font-size: 35px;
+  }
+  .container-hero-text p {
+    font-family: "Rubik", sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
 .section-ui-developing {
   padding: 100px 120px;
   border-radius: 25px;
@@ -351,6 +374,12 @@
   .col-lg-6 {
     padding-left: 50px;
     padding-right: 50px;
+  }
+}
+/* Media query per schermi piccoli */
+@media (max-width: 400px) {
+  .cta {
+    margin-left: 100px;
   }
 }
 .section-steps {
@@ -907,7 +936,7 @@ input[type=file] {
 }
 
 /* Media query per schermi piccoli */
-@media (max-width: 600px) {
+@media (max-width: 400px) {
   .container-columns {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -920,19 +949,6 @@ input[type=file] {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-  .container-columns .container-certificazioni {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding-top: 30px;
   }
   .container-columns > div {
     margin-bottom: 20px;
@@ -954,7 +970,7 @@ input[type=file] {
 .swiper-pagination {
   position: absolute;
   bottom: 280px !important;
-  left: 200px !important;
+  left: 20% !important;
 }
 
 .swiper-pagination-bullet {
@@ -991,5 +1007,12 @@ input[type=file] {
 @media (max-width: 992px) {
   .swiper-pagination {
     left: 50px !important;
+  }
+}
+@media (max-width: 400px) {
+  .swiper-pagination {
+    position: absolute;
+    bottom: 150px !important;
+    left: 50% !important;
   }
 }

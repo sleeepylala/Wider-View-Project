@@ -30,15 +30,37 @@
   }
 }
 
+
+
 @media (max-width: 992px) {
   .container-hero-text {
     max-width: 100%;
   }
+
   .container-parent-hero {
     padding: 0 15px !important;
   }
 }
 
 /* Media query per schermi piccoli */
-@media (max-width: 576px) {
+@media (max-width: 400px) {
+
+  .container-hero-text {
+
+    padding-top: 100px;
+
+
+    h1 {
+      padding-bottom: 15px;
+      font-size: 35px;
+
+    }
+
+    p {
+      font-family: $font-family-rubik;
+      font-size: 18px;
+      line-height: 30px;
+    }
+  }
+
 }

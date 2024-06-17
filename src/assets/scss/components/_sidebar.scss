@@ -120,4 +120,15 @@
     justify-content: center;
     align-items: center;
   }
+
+}
+
+/* Media query per schermi piccoli */
+@media (max-width: 400px) {
+
+
+  .navbar-container {
+    justify-content: center;
+    margin-left: 100px;
+  }
 }

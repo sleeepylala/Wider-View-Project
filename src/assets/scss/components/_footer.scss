@@ -75,20 +75,17 @@
   }
 }
 
+
+
 /* Media query per schermi piccoli */
-@media (max-width: 600px) {
+@media (max-width: 400px) {
   .container-columns {
     flex-direction: column;
     text-align: center;
     align-items: center;
     justify-content: center;
 
-    .container-certificazioni {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      padding-top: 30px;
-    }
+
   }
 
   .container-columns>div {
