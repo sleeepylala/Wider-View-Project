@@ -8,6 +8,7 @@ AOS.init();
 let swiper = new Swiper(".mySwiper", {
 
   direction: "horizontal",
+  spaceBetween: 0,
   loop: true,
 
 

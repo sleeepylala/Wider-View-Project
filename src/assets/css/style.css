@@ -6,6 +6,11 @@
           box-sizing: border-box;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 @font-face {
   font-family: "Rubik";
   src: url("../fonts/Rubik-font-p/Rubik-Italic-VariableFont_wght.ttf") format("truetype");
@@ -208,13 +213,27 @@
         -ms-flex-align: center;
             align-items: center;
   }
+  .navbar-dx .offcanvas {
+    position: fixed;
+    top: 0;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    transition: -webkit-transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+    margin: 0 auto;
+  }
+  .navbar-dx .offcanvas.show {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
 /* Media query per schermi piccoli */
 @media (max-width: 450px) {
   .navbar-container {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     margin-left: 100px;
   }
   .navbar-container .social-lang {
@@ -985,14 +1004,21 @@ input[type=file] {
     margin: 0 auto;
   }
 }
+.swiper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
 .swiper-slide {
+  width: 100%;
   background-image: url("../images/Immagine-slider-da-ripetere.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
   height: 100%;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .swiper-pagination {
@@ -1020,6 +1046,7 @@ input[type=file] {
      object-fit: cover;
 }
 
+/* Overlay semitrasparente */
 .swiper-slide::before {
   content: "";
   position: absolute;
@@ -1028,15 +1055,16 @@ input[type=file] {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
-  /* Overlay semitrasparente */
   z-index: 1;
 }
 
+/* Media query per schermi larghi */
 @media (min-width: 900px) {
   .swiper-pagination {
     bottom: 200px !important;
   }
 }
+/* Media query per schermi stretti */
 @media (max-width: 500px) {
   .swiper-pagination {
     position: absolute;

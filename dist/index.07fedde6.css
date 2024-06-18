@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 @font-face {
   font-family: Rubik;
   src: url("Rubik-Italic-VariableFont_wght.4f4d6f0b.ttf") format("truetype");
@@ -163,11 +167,24 @@
     align-items: center;
     display: flex;
   }
+
+  .navbar-dx .offcanvas {
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    margin: 0 auto;
+    transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+    position: fixed;
+    top: 0;
+    transform: translateY(-100%);
+  }
+
+  .navbar-dx .offcanvas.show {
+    transform: translateY(0);
+  }
 }
 
 @media (width <= 450px) {
   .navbar-container {
-    justify-content: center;
     margin-left: 100px;
   }
 
@@ -816,14 +833,21 @@ input[type="file"] {
   }
 }
 
+.swiper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
 .swiper-slide {
   background-image: url("Immagine-slider-da-ripetere.e8ff8ed7.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100%;
   height: 100%;
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .swiper-pagination {

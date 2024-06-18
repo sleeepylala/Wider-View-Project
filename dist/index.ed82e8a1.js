@@ -593,6 +593,7 @@ var _aosCss = require("aos/dist/aos.css");
 // Swiper JS
 let swiper = new Swiper(".mySwiper", {
     direction: "horizontal",
+    spaceBetween: 0,
     loop: true,
     pagination: {
         el: ".swiper-pagination",

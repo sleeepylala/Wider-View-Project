@@ -1,12 +1,24 @@
+.swiper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+}
+
+
 .swiper-slide {
+    width: 100%;
+
     background-image: url("../images/Immagine-slider-da-ripetere.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
     height: 100%;
-    overflow-x: hidden;
+    overflow: hidden;
+
 }
+
 
 .swiper-pagination {
     position: absolute;
@@ -22,6 +34,7 @@
     background-color: #A3A3A3 !important;
 }
 
+
 .swiper-pagination-bullet-active {
     background-color: #479E97 !important;
 }
@@ -34,6 +47,7 @@
     object-fit: cover;
 }
 
+/* Overlay semitrasparente */
 .swiper-slide::before {
     content: "";
     position: absolute;
@@ -42,21 +56,18 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
-    /* Overlay semitrasparente */
     z-index: 1;
 }
 
+/* Media query per schermi larghi */
 @media (min-width: 900px) {
-
     .swiper-pagination {
-
         bottom: 200px !important;
-
     }
-
 }
 
-@media (max-width : 500px) {
+/* Media query per schermi stretti */
+@media (max-width: 500px) {
     .swiper-pagination {
         position: absolute;
         bottom: 180px !important;
