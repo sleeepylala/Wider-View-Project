@@ -5,6 +5,22 @@ import 'aos/dist/aos.css';
 AOS.init();
 
 
+//Swiper  JS//
+let swiper = new Swiper(".mySwiper", {
+  // Optional parameters
+  direction: "horizontal",
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
+    dynamicBullets: true,
+    clickable: true,
+  },
+});
+
+
+
 // Mostra la descrizione iniziale
 document.addEventListener('DOMContentLoaded', function () {
   showStep(1); // Mostra il primo step di default
@@ -75,17 +91,3 @@ function showStep(stepNumber) {
 }
 
 
-
-//Swiper  JS//
-let swiper = new Swiper(".mySwiper", {
-  // Optional parameters
-  direction: "horizontal",
-  loop: true,
-
-  // If we need pagination
-  pagination: {
-    el: ".swiper-pagination",
-    dynamicBullets: true,
-    clickable: true,
-  },
-});
