@@ -6,6 +6,8 @@
   border-top-right-radius: 25px;
   padding-left: $padding-left-wrapper * 10;
   padding-right: $padding-right-wrapper * 10;
+  max-width: $max-width-wrapper;
+  margin: $margin-auto-wrapper;
 }
 
 .container-steps {

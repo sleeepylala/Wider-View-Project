@@ -222,7 +222,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-height: 900px;
+  min-height: 100vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -387,6 +387,8 @@
   border-top-right-radius: 25px;
   padding-left: 200px;
   padding-right: 200px;
+  max-width: 1500px;
+  margin: 0 auto;
 }
 
 .container-steps {
@@ -558,6 +560,8 @@
   padding-bottom: 80px;
   padding-left: 200px;
   padding-right: 200px;
+  max-width: 1500px;
+  margin: 0 auto;
   background-color: white;
 }
 
@@ -708,6 +712,8 @@
           justify-content: center;
   padding-left: 20px;
   padding-right: 20px;
+  max-width: 1500px;
+  margin: 0 auto;
 }
 
 .form-body {
@@ -723,8 +729,6 @@
           justify-content: center;
   text-align: center;
   font-family: "PP Neue Machina", sans-serif;
-  padding-left: 20px;
-  padding-right: 20px;
   min-width: 50%;
 }
 .form-body .form-select,

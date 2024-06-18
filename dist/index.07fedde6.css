@@ -176,7 +176,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: start;
-  min-height: 900px;
+  min-height: 100vh;
   padding-left: 150px;
   display: flex;
 }
@@ -328,6 +328,8 @@
 .section-steps {
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
+  max-width: 1500px;
+  margin: 0 auto;
   padding: 50px 200px 90px;
 }
 
@@ -465,6 +467,8 @@
 .section-bio {
   background-color: #fff;
   flex-direction: column;
+  max-width: 1500px;
+  margin: 0 auto;
   padding-bottom: 80px;
   padding-left: 200px;
   padding-right: 200px;
@@ -588,6 +592,8 @@
 
 .section-form {
   justify-content: center;
+  max-width: 1500px;
+  margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
   display: flex;
@@ -598,8 +604,6 @@
   flex-direction: column;
   justify-content: center;
   min-width: 50%;
-  padding-left: 20px;
-  padding-right: 20px;
   font-family: PP Neue Machina, sans-serif;
   display: flex;
 }
