@@ -16,6 +16,7 @@
   padding: 0 20px;
   padding-bottom: 50px;
 
+
   h1 {
     font-family: $font-family-pp-neue-machina;
     font-size: 48px;
@@ -49,15 +50,23 @@
   .container-hero-text {
     h1 {
       padding-bottom: 15px;
-      font-size: 35px;
+      font-size: 25px;
 
     }
 
     p {
       font-family: $font-family-rubik;
-      font-size: 18px;
+      font-size: 15px;
       line-height: 30px;
     }
+  }
+
+}
+
+@media (min-width: 1600px) {
+
+  .container-hero-text {
+    max-width: $max-width-wrapper / 2;
   }
 
 }

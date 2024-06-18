@@ -10,6 +10,7 @@
   padding-right: $padding-right-wrapper;
 
 
+
   .container-logo {
     padding: 30px 50px;
   }
@@ -79,7 +80,7 @@
 
 
 /* Media query per schermi piccoli */
-@media (max-width: 450px) {
+@media (max-width: 1000px) {
   .container-columns {
     flex-direction: column;
     text-align: center;
@@ -96,4 +97,13 @@
   .container-copyright {
     text-align: center;
   }
+}
+
+@media (min-width: 1600px) {
+
+  .wrapper-footer {
+    max-width: $max-width-wrapper;
+    margin: $margin-auto-wrapper
+  }
+
 }

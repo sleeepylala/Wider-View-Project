@@ -217,6 +217,21 @@
             justify-content: center;
     margin-left: 100px;
   }
+  .navbar-container .social-lang {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: start;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .navbar-container a {
+    font-size: 25px;
+  }
 }
 .container-parent-hero {
   display: -webkit-box;
@@ -270,12 +285,17 @@
 @media (max-width: 450px) {
   .container-hero-text h1 {
     padding-bottom: 15px;
-    font-size: 35px;
+    font-size: 25px;
   }
   .container-hero-text p {
     font-family: "Rubik", sans-serif;
-    font-size: 18px;
+    font-size: 15px;
     line-height: 30px;
+  }
+}
+@media (min-width: 1600px) {
+  .container-hero-text {
+    max-width: 750px;
   }
 }
 .section-ui-developing {
@@ -938,7 +958,7 @@ input[type=file] {
 }
 
 /* Media query per schermi piccoli */
-@media (max-width: 450px) {
+@media (max-width: 1000px) {
   .container-columns {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -959,6 +979,12 @@ input[type=file] {
     text-align: center;
   }
 }
+@media (min-width: 1600px) {
+  .wrapper-footer {
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+}
 .swiper-slide {
   background-image: url("../images/Immagine-slider-da-ripetere.jpg");
   background-size: cover;
@@ -971,8 +997,8 @@ input[type=file] {
 
 .swiper-pagination {
   position: absolute;
-  bottom: 280px !important;
-  left: 20% !important;
+  bottom: 220px !important;
+  left: 15% !important;
 }
 
 .swiper-pagination-bullet {
@@ -1006,15 +1032,15 @@ input[type=file] {
   z-index: 1;
 }
 
-@media (max-width: 992px) {
+@media (min-width: 900px) {
   .swiper-pagination {
-    left: 50px !important;
+    bottom: 200px !important;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .swiper-pagination {
     position: absolute;
-    bottom: 80px !important;
-    left: 50% !important;
+    bottom: 180px !important;
+    left: 20% !important;
   }
 }

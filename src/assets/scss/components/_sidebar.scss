@@ -129,5 +129,18 @@
   .navbar-container {
     justify-content: center;
     margin-left: 100px;
+
+    .social-lang {
+      display: flex;
+      text-align: start;
+      justify-content: flex-end;
+      align-items: flex-end;
+
+    }
+
+
+    a {
+      font-size: 25px
+    }
   }
 }

@@ -590,12 +590,10 @@ var _aosDefault = parcelHelpers.interopDefault(_aos);
 var _aosCss = require("aos/dist/aos.css");
 // Inizializza AOS
 (0, _aosDefault.default).init();
-//Swiper  JS//
+// Swiper JS
 let swiper = new Swiper(".mySwiper", {
-    // Optional parameters
     direction: "horizontal",
     loop: true,
-    // If we need pagination
     pagination: {
         el: ".swiper-pagination",
         dynamicBullets: true,
@@ -604,18 +602,32 @@ let swiper = new Swiper(".mySwiper", {
 });
 // Mostra la descrizione iniziale
 document.addEventListener("DOMContentLoaded", function() {
-    showStep(1); // Mostra il primo step di default
-});
-// Aggiungere event listener ai bottoni
-document.getElementById("voce1").addEventListener("click", function() {
     showStep(1);
+    // Aggiunta event ai bottoni
+    document.getElementById("voce1").addEventListener("click", function() {
+        showStep(1);
+    });
+    document.getElementById("voce2").addEventListener("click", function() {
+        showStep(2);
+    });
+    document.getElementById("voce3").addEventListener("click", function() {
+        showStep(3);
+    });
+    //gestione cambio icona toggle navbar
+    const toggleButton = document.querySelector(".navbar-toggler");
+    const offcanvasNavbar = document.getElementById("offcanvasNavbar");
+    const openIcon = '<i class="icon-minus fa-solid fa-minus"></i><i class="icon-minus fa-solid fa-minus"></i>';
+    const closeIcon = '<i class="fa-solid fa-xmark"></i>';
+    // Cambia l'icona quando la sidebar viene aperta
+    offcanvasNavbar.addEventListener("show.bs.offcanvas", function() {
+        toggleButton.innerHTML = closeIcon;
+    });
+    // Cambia l'icona quando la sidebar viene chiusa
+    offcanvasNavbar.addEventListener("hidden.bs.offcanvas", function() {
+        toggleButton.innerHTML = openIcon;
+    });
 });
-document.getElementById("voce2").addEventListener("click", function() {
-    showStep(2);
-});
-document.getElementById("voce3").addEventListener("click", function() {
-    showStep(3);
-});
+//funzione per la gestione dell'animazione entrata e uscita degli steps
 function showStep(stepNumber) {
     const counter = document.getElementById("counter");
     const steps = document.querySelectorAll(".voce");
@@ -647,9 +659,7 @@ function showStep(stepNumber) {
         // Aggiungi l'animazione di entrata attiva
         newDescription.classList.add("slide-enter-active");
     }
-    // Aggiornare il contatore
     counter.innerText = stepNumber + "/3";
-    // Aggiornare lo stato attivo delle voci
     steps.forEach((step)=>{
         step.classList.remove("active");
     });

@@ -10,8 +10,8 @@
 
 .swiper-pagination {
     position: absolute;
-    bottom: 280px !important;
-    left: 20% !important;
+    bottom: 220px !important;
+    left: 15% !important;
 }
 
 
@@ -46,16 +46,20 @@
     z-index: 1;
 }
 
-@media (max-width: 992px) {
+@media (min-width: 900px) {
+
     .swiper-pagination {
-        left: 50px !important;
+
+        bottom: 200px !important;
+
     }
+
 }
 
-@media (max-width : 400px) {
+@media (max-width : 500px) {
     .swiper-pagination {
         position: absolute;
-        bottom: 80px !important;
-        left: 50% !important;
+        bottom: 180px !important;
+        left: 20% !important;
     }
 }

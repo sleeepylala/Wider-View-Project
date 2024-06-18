@@ -170,6 +170,17 @@
     justify-content: center;
     margin-left: 100px;
   }
+
+  .navbar-container .social-lang {
+    text-align: start;
+    justify-content: flex-end;
+    align-items: flex-end;
+    display: flex;
+  }
+
+  .navbar-container a {
+    font-size: 25px;
+  }
 }
 
 .container-parent-hero {
@@ -217,13 +228,19 @@
 @media (width <= 450px) {
   .container-hero-text h1 {
     padding-bottom: 15px;
-    font-size: 35px;
+    font-size: 25px;
   }
 
   .container-hero-text p {
     font-family: Rubik, sans-serif;
-    font-size: 18px;
+    font-size: 15px;
     line-height: 30px;
+  }
+}
+
+@media (width >= 1600px) {
+  .container-hero-text {
+    max-width: 750px;
   }
 }
 
@@ -775,7 +792,7 @@ input[type="file"] {
   padding-bottom: 15px;
 }
 
-@media (width <= 450px) {
+@media (width <= 1000px) {
   .container-columns {
     text-align: center;
     flex-direction: column;
@@ -792,6 +809,13 @@ input[type="file"] {
   }
 }
 
+@media (width >= 1600px) {
+  .wrapper-footer {
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+}
+
 .swiper-slide {
   background-image: url("Immagine-slider-da-ripetere.e8ff8ed7.jpg");
   background-position: center;
@@ -804,8 +828,8 @@ input[type="file"] {
 
 .swiper-pagination {
   position: absolute;
-  bottom: 280px !important;
-  left: 20% !important;
+  bottom: 220px !important;
+  left: 15% !important;
 }
 
 .swiper-pagination-bullet {
@@ -838,17 +862,17 @@ input[type="file"] {
   left: 0;
 }
 
-@media (width <= 992px) {
+@media (width >= 900px) {
   .swiper-pagination {
-    left: 50px !important;
+    bottom: 200px !important;
   }
 }
 
-@media (width <= 400px) {
+@media (width <= 500px) {
   .swiper-pagination {
     position: absolute;
-    bottom: 80px !important;
-    left: 50% !important;
+    bottom: 180px !important;
+    left: 20% !important;
   }
 }
 /*# sourceMappingURL=index.07fedde6.css.map */
