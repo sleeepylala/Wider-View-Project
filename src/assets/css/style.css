@@ -998,7 +998,7 @@ input[type=file] {
     text-align: center;
   }
 }
-@media (min-width: 1600px) {
+@media (min-width: 1700px) {
   .wrapper-footer {
     max-width: 1500px;
     margin: 0 auto;
